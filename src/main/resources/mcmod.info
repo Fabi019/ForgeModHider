@@ -1,0 +1,18 @@
+[
+  {
+    "modid": "${modid}",
+    "name": "Mod Hider",
+    "description": "Hides installed mods when connecting to a server.",
+    "version": "${version}",
+    "mcversion": "${mcversion}",
+    "url": "https://github.com/Fabi019/ForgeModHider",
+    "updateUrl": "",
+    "authorList": [
+      "Fabi019"
+    ],
+    "credits": "",
+    "logoFile": "",
+    "screenshots": [],
+    "dependencies": []
+  }
+]
