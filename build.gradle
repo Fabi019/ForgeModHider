@@ -19,7 +19,7 @@ apply plugin: 'com.github.johnrengelman.shadow'
 sourceCompatibility = targetCompatibility = JavaVersion.VERSION_1_8
 compileJava.options.encoding = 'UTF-8'
 
-version = "1.0.0"
+version = "1.0.1"
 group = "modhider"
 archivesBaseName = "ModHider"
 String modid = "modhider"

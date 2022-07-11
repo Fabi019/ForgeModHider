@@ -1,6 +1,7 @@
 package modhider.mixins;
 
 import modhider.HiderMod;
+import net.minecraft.client.Minecraft;
 import net.minecraftforge.fml.common.ModContainer;
 import net.minecraftforge.fml.common.network.handshake.FMLHandshakeMessage;
 import org.spongepowered.asm.mixin.Mixin;
@@ -21,6 +22,10 @@ public abstract class MixinModList {
 
     @Inject(method = "<init>(Ljava/util/List;)V", at = @At(value = "RETURN"))
     public void init(List<ModContainer> modList, CallbackInfo ci) {
+        if (Minecraft.getMinecraft().isIntegratedServerRunning()) {
+            return;
+        }
+
         modTags = modTags.entrySet()
                 .stream()
                 .filter(e -> HiderMod.isWhitelisted(e.getKey()))
