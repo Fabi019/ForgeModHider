@@ -1,5 +1,7 @@
 # Forge Mod Hider
 
+![Downloads](https://img.shields.io/github/downloads/Fabi019/ForgeModHider/total)
+
 Mod that prevents Forge from leaking your installed Mods to the server you are connecting to. Supports only Forge 1.8.9.
 
 Within the Forge Handshake multiple packets are being sent by the client. One of these is
